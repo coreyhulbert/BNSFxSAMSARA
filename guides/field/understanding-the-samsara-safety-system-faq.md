@@ -1,0 +1,66 @@
+---
+title: Understanding the Samsara Safety System — FAQ
+meta: For BNSF Railway · Internal use — for BNSF employees
+summary: How the AI camera works, what's recorded, how you're identified, and what happens when an event is flagged.
+raw: true
+---
+<div class="callout note"><strong>A note on the numbers and process in this guide</strong><p>Specific thresholds referenced here (e.g., two in-cab notifications before a detected event) reflect BNSF's current configuration of the Samsara platform, and the VCS Path structure reflects BNSF's documented Vehicle Camera System workflow as of this writing. These are subject to BNSF's ongoing configuration and process decisions, not fixed rules of the software.</p></div>
+
+    <h3>How the system works</h3>
+    <p><strong>What is the Samsara system installed in my truck or equipment?</strong> It's an AI Dash Cam and Vehicle Gateway pair. The dash cam watches the road (and, on dual-facing units, the cab); the Vehicle Gateway reads vehicle data like speed, location, and engine diagnostics. Together they support safety event detection, HOS/electronic logging, footage retrieval, and the Driver App.</p>
+    <p><strong>Why is BNSF using this?</strong> To reduce collisions and near-misses, protect employees and the public on and around the right of way, and give BNSF's Safety team and Rules department visibility to catch risk before it becomes an incident. The intent is prevention, not surveillance for its own sake.</p>
+    <p><strong>Does the AI make decisions about my job on its own?</strong> Not on anything serious. Every detected event is reviewed by an AI Agent first, automatically. For a first-time, minor issue, that review can move straight into a standard training assignment without a person signing off first. Beyond that, and for anything serious, a person — your supervisor and/or BNSF's Safety/VCST team — makes the call, reviewing the actual footage before deciding.</p>
+    <p><strong>Is the AI running all the time I'm on the clock?</strong> The dash cam continuously analyzes footage on the device itself for the specific behaviors BNSF has configured it to look for (following distance, lane position, signs of distraction, etc.) — a machine scanning for patterns, not a person watching a live feed.</p>
+    <p><strong>What behaviors can the system detect?</strong> The enabled set is configured by BNSF's Safety team; common types include following distance, lane departure, distraction, drowsiness, harsh braking/acceleration, speeding, and seat belt use. Ask your supervisor for the current list active on your equipment.</p>
+
+    <h3>Privacy: is someone watching me 24/7?</h3>
+    <p><strong>Is there a person watching me live, all day, every day?</strong> No. Nobody at BNSF or Samsara sits watching a continuous live feed. It's an AI system scanning for predefined patterns against BNSF's configured thresholds. A person only gets involved once the AI flags something.</p>
+    <p><strong>What does the AI actually do with the footage?</strong> It processes video on the device in real time against BNSF's configured thresholds. If your driving doesn't cross a threshold, nothing is escalated — on most trips, no human ever sees a second of footage.</p>
+    <p><strong>Who gets access to my footage?</strong> Access is role-based. When an event is flagged, only your supervisor and the BNSF VCST can review it — and what they see is the short clip tied to that specific event, not your full shift.</p>
+    <p><strong>Can BNSF pull up a live feed of me whenever they want?</strong> Only one person at BNSF has that ability: Michael Cook, AVP of Safety and Rules. No one else — not your supervisor, not the wider VCST — can pull a live feed.</p>
+    <p><strong>If he does, would I know?</strong> Yes, every time. The moment he initiates it, an AI voice agent announces the incoming call through your camera speaker first, the same way an incoming call would announce itself.</p>
+    <p><strong>Does this track me when I'm off the clock?</strong> Recording and location tracking are tied to the vehicle and trip activity, not to you personally once off duty. Exact start/stop behavior is a BNSF Safety team configuration — ask your supervisor for specifics on your equipment.</p>
+    <p><strong>Does Samsara sell or share my footage with third parties?</strong> The data belongs to BNSF as the customer and supports BNSF's safety program — it isn't sold to advertisers or unrelated third parties. BNSF's agreement with Samsara and Samsara's published privacy policy are the authoritative sources.</p>
+
+    <h3>How you're identified: badge, license number, and the Driver App</h3>
+    <p><strong>How does the system identify me?</strong> By scanning your badge or license to the inward-facing camera, or by signing in through the Samsara Driver App. Neither method uses your face, fingerprint, or any biometric marker.</p>
+    <p><strong>Is facial recognition turned on?</strong> No. BNSF has disabled Camera ID (Samsara's facial-recognition driver-assignment feature) at the account level. It isn't running in the background and isn't collecting facial data.</p>
+    <p><strong>What exactly does the badge/license scan capture?</strong> Only your driver's license number — no photo, address, date of birth, or other field, and no image of the license itself is stored.</p>
+    <p><strong>Do I have to use the Driver App?</strong> It depends: ELD drivers must use it for HOS logging (federal law, not a BNSF preference). Drivers with BNSF-provided, non-ELD equipment are expected to use it as the standard method. Drivers without BNSF-provided equipment and not subject to ELD can use it voluntarily, or scan a badge/license instead — either way is compliant.</p>
+    <p><strong>Why use it if it's voluntary?</strong> It's the most efficient association method (no scan needed), and it's where your coaching videos are sent so you can review them yourself, at your own pace.</p>
+
+    <h3>How In-Cab Nudges give you a chance to self-correct</h3>
+    <p><strong>What is an In-Cab Nudge?</strong> A real-time audio alert that plays in the cab the moment the AI detects a behavior like following too closely or a lane departure — aimed at you, in the moment, so you can correct immediately. Nothing is sent to anyone else when a Nudge fires.</p>
+    <p><strong>How many chances do I get before my supervisor is notified?</strong> Two, per trip, for the same behavior type. First occurrence: a Nudge plays, no notification goes anywhere. Second occurrence (same trip, same behavior): a Nudge plays again, still no supervisor notification. Correct the behavior after either Nudge, and that's the end of it.</p>
+    <p><strong>What happens on a third occurrence, same trip?</strong> The system treats it as a pattern rather than a one-off: it becomes a detected event. Video uploads to the Samsara cloud, an AI Agent reviews the footage, and the event is logged in BNSF's VCS Portal, with your supervisor and/or Safety/VCST team notified depending on category.</p>
+    <p><strong>Do Nudges by themselves count against me?</strong> They exist specifically to resolve a behavior before it's reviewed or affects your record. Ask your supervisor how BNSF's coaching/scoring process treats Nudge history — that's a BNSF program decision, not a fixed software setting.</p>
+
+    <h3>What happens when an event is flagged: the AI Agent review and the VCS Paths</h3>
+    <p><strong>Once an event is detected, what happens first?</strong> Video and data upload automatically to the secure Samsara cloud, and an AI Agent reviews the footage — on every single detected event, as the first step, every time.</p>
+    <p><strong>Does a person look at it too?</strong> Depends on the Path. A first-time minor issue can move directly to a standard training assignment. From a second occurrence in the same category, or for anything serious, a person — your supervisor and/or Safety/VCST — also reviews the actual footage before any decision.</p>
+    <p><strong>The three VCS Paths:</strong></p>
+    <ul>
+      <li><strong>Path 1 — First Standard Exception:</strong> a first-time occurrence of a standard-category issue (e.g., moderate speeding, smoking, distraction) within your review period. After the AI Agent's review, training is automatically assigned; you and your supervisor are notified, and the event closes once you complete it.</li>
+      <li><strong>Path 2 — Second or Subsequent Standard Exception:</strong> the same category recurring within your review period. Your supervisor is notified, personally watches the event video, discusses it with you, and decides handling. BNSF's Safety/VCST team is notified too.</li>
+      <li><strong>Path 3 — Serious events:</strong> seatbelt violations, electronic device use, severe speeding, red light/stop sign violations, railroad/yard crossing exceptions, collisions, or tampering. These route straight to BNSF's Safety/VCST team, who reviews, determines handling, and directs your supervisor on next steps.</li>
+    </ul>
+    <p><strong>How does BNSF decide "first" vs. "repeat"?</strong> Based on a rolling 12-month review period, the same for scheduled and exempt employees. An exception outside that window resets to a first occurrence.</p>
+    <p><strong>How does an event get closed out?</strong> Documented in the VCS Portal closeout screen — by your supervisor for Path 1/2, or by Safety/VCST for Path 3. You and your supervisor get an email confirmation once officially closed.</p>
+    <p><strong>What if I think the classification got it wrong?</strong> Say so when your supervisor discusses it with you — catching a wrong call is part of why a person reviews the footage on anything beyond a first-time minor issue.</p>
+
+    <h3>Audio recording and the AI Agent Call</h3>
+    <p><strong>Is my cab microphone recording me?</strong> No. Audio recording is off by default — the dash cam captures video only under normal operation.</p>
+    <p><strong>When does audio ever turn on?</strong> Only when you initiate an AI Agent Call (the two-way in-cab voice feature) or when your supervisor calls in through that channel — active only for the duration of that voice interaction.</p>
+    <p><strong>What is the AI Agent Call?</strong> A two-way voice channel built into the dash cam — a call button built into the cab, not an always-on microphone.</p>
+    <p><strong>Can BNSF turn on my microphone without me knowing?</strong> As configured, audio stays off outside an AI Agent Call. Any change is a BNSF policy decision and must comply with the recording-consent laws of the state you're operating in.</p>
+
+    <h3>More questions, answered</h3>
+    <p><strong>Does this affect my HOS or ELD status?</strong> No — electronic logging is a separate function from the AI safety detection described here.</p>
+    <p><strong>What's a safety score?</strong> A rollup of a driver's detected safety-related events over time, used by Safety leadership to prioritize coaching and recognize safe driving fleet-wide. How BNSF weighs it individually is a BNSF program question — ask your supervisor.</p>
+    <p><strong>What if I think the AI got it wrong (a false positive)?</strong> Say so — that's part of what the human review step exists for. Raise it when a flagged event is discussed with you.</p>
+    <p><strong>Can I see my own footage or flagged events?</strong> In most fleets, drivers can request to review their own flagged events with their supervisor — confirm BNSF's exact process with your Safety team or supervisor.</p>
+    <p><strong>Is this unique to me?</strong> No — every equipped vehicle and driver is held to the same detection types, Nudge thresholds, and review process.</p>
+    <p><strong>Is the Driver App separate from all of this?</strong> It's part of the same Samsara platform but a distinct tool from the AI Dash Cam's safety detection — navigation, DVIRs, HOS logs, and messages. Using it doesn't turn on cab audio or trigger safety events by itself.</p>
+    <p><strong>Who do I talk to with a question this guide didn't cover?</strong> Your supervisor or BNSF's Safety team, always — including questions about the platform or install process. Don't reach out to Samsara directly; BNSF's Safety team is the single point of contact and will coordinate with Samsara on your behalf if needed.</p>
+
+    <div class="callout tip"><strong>The short version</strong><p>Nobody is watching a live feed of you all day. Live viewing is limited to one person at BNSF (Michael Cook, AVP of Safety and Rules), and even then an AI voice agent always announces it first. Every detected event gets an automatic AI Agent review. A first-time minor issue can move straight to automatic training; anything repeat or serious gets watched by a person before any decision. All biometric identification is off — you're identified by a badge/license-number scan or by signing in through the Driver App, never by your face. In-cab notifications give you a chance to self-correct before an event is ever logged. Audio stays off unless you start an AI Agent Call.</p></div>
